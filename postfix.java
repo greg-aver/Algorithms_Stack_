@@ -11,8 +11,10 @@ public Integer postfix() {
                     );
                     break;
                 case ("-"):
+                    Integer elementSecond = operation.pop();
+                    Integer elementFirst = operation.pop();      
                     operation.push(
-                             - operation.pop() + operation.pop()
+                             elementFirst - elementSecond
                     );
                     break;
                 case ("+"):
